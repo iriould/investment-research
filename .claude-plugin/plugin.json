@@ -1,0 +1,51 @@
+{
+  "name": "investment-research",
+  "version": "3.0.0",
+  "description": "一级市场私募股权投资研究：行业研究、公司尽调、关键问题识别、竞对分析",
+  "author": { "name": "Iriould" },
+  "license": "MIT",
+  "keywords": ["pe", "vc", "investment-research", "competitive-analysis", "due-diligence", "critical-questions", "tech-analysis"],
+  "userConfig": {
+    "primary_search_tools": {
+      "type": "string",
+      "title": "默认搜索工具",
+      "description": "用于行业、公司、融资、市场、竞对等通用信息搜索。填 auto 表示自动使用当前 Claude Code 环境已配置的搜索工具；填 ask 表示首次运行时询问并保存；也可填写工具名列表，如 WebSearch, tavily-mcp。",
+      "default": "auto"
+    },
+    "technical_search_tools": {
+      "type": "string",
+      "title": "默认技术搜索工具",
+      "description": "用于技术文档、开源项目、代码仓库、API、benchmark 等技术信息搜索。填 auto 表示自动使用当前可用技术搜索工具；填 ask 表示首次运行时询问并保存。",
+      "default": "auto"
+    },
+    "search_language_bias": {
+      "type": "string",
+      "title": "搜索语言偏好",
+      "description": "通用搜索语言偏好。建议中文 PE/VC 场景使用 zh-first；海外项目可填写 en-first；不确定可填写 auto。",
+      "default": "zh-first"
+    },
+    "collaboration_mode": {
+      "type": "string",
+      "title": "默认协作模式",
+      "description": "输出协作模式。local 表示默认输出本地 Markdown；lark 表示默认使用飞书云文档协作；ask 表示首次运行时询问并写入插件持久配置。",
+      "default": "ask"
+    },
+    "lark_reference_mode": {
+      "type": "string",
+      "title": "飞书资料读取偏好",
+      "description": "使用飞书协作时是否默认询问读取飞书参考资料。ask 表示每次按需询问；always 表示默认询问并尝试读取；never 表示不主动读取飞书资料。",
+      "default": "ask"
+    }
+  },
+  "skills": [
+    "./skills/industry-research",
+    "./skills/company-research",
+    "./skills/critical-questions",
+    "./skills/competitive-analysis"
+  ],
+  "agents": [
+    "./agents/industry-research.md",
+    "./agents/company-research.md",
+    "./agents/competitive-analysis.md"
+  ]
+}
