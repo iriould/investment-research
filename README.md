@@ -59,8 +59,27 @@
 
 ## 安装
 
+### 通过 Marketplace 安装（推荐）
+
 ```bash
-claude plugin add <plugin-path-or-url>
+# 1. 添加 Marketplace
+claude plugin marketplace add iriould/investment-research
+
+# 2. 安装插件
+claude plugin install investment-research@iriould-investment-research
+```
+
+或在 Claude Code 交互模式中：
+
+```
+/plugin marketplace add iriould/investment-research
+/plugin install investment-research@iriould-investment-research
+```
+
+### 直接安装
+
+```bash
+claude plugin add https://github.com/iriould/investment-research
 ```
 
 ## 前置条件

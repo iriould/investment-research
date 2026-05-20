@@ -1,0 +1,19 @@
+{
+  "name": "iriould-investment-research",
+  "description": "一级市场私募股权/风险投资投研辅助插件市场",
+  "owner": {
+    "name": "Iriould"
+  },
+  "plugins": [
+    {
+      "name": "investment-research",
+      "source": "./",
+      "description": "一级市场私募股权投资研究：行业研究、公司尽调、关键问题识别、竞对分析",
+      "version": "3.0.0",
+      "author": { "name": "Iriould" },
+      "license": "MIT",
+      "keywords": ["pe", "vc", "investment-research", "competitive-analysis", "due-diligence", "critical-questions", "tech-analysis"],
+      "category": "research"
+    }
+  ]
+}
