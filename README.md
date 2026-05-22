@@ -76,11 +76,6 @@ claude plugin install investment-research@iriould-investment-research
 /plugin install investment-research@iriould-investment-research
 ```
 
-### 直接安装
-
-```bash
-claude plugin add https://github.com/iriould/investment-research
-```
 
 ## 前置条件
 
